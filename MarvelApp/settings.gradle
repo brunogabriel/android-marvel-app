@@ -1,0 +1,4 @@
+include ':styleguide'
+include ':network'
+include ':app'
+rootProject.name = "MarvelApp"

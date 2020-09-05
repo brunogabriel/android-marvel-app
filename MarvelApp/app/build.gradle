@@ -1,0 +1,25 @@
+import dependencies.Dependencies
+import dependencies.Modules
+
+apply plugin: 'com.android.application'
+apply from: "$rootDir/config/android_build.gradle"
+apply plugin: 'kotlin-kapt' // TODO: precisa aqui?
+apply plugin: 'dagger.hilt.android.plugin'
+
+android {
+    defaultConfig {
+        applicationId AndroidConfig.APPLICATION_ID
+    }
+}
+
+dependencies {
+    // Modules
+    implementation project(Modules.STYLEGUIDE)
+//    implementation project(Modules.NETWORK)
+
+    // Hilt
+    implementation Dependencies.hilt.values()
+    kapt Dependencies.hiltCompile.values()
+
+    implementation Dependencies.ui.values()
+}

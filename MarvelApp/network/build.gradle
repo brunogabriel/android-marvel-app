@@ -1,0 +1,25 @@
+import dependencies.Dependencies
+
+apply plugin: 'com.android.library'
+apply from: "$rootDir/config/android_build.gradle"
+
+android {
+    defaultConfig {
+        buildConfigField "String", "API_URL", "\"https://gateway.marvel.com:443\""
+        buildConfigField "String", "MARVEL_PUBLIC_API", '"??"'
+        buildConfigField "String", "MARVEL_PRIVATE_API", '"??"'
+    }
+}
+
+dependencies {
+    implementation Dependencies.ui.values()
+    api Dependencies.retrofit.values()
+
+    // hilt
+    implementation Dependencies.hilt.values()
+    kapt Dependencies.hiltCompile.values()
+
+    // chucker interceptor
+    debugImplementation Dependencies.chuckerInterceptor["CHUCKER_DEBUG"]
+    releaseImplementation Dependencies.chuckerInterceptor["CHUCKER_RELEASE"]
+}

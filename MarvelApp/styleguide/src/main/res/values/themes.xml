@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.MarvelApp" parent="Theme.MarvelApp.Default">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item> <!-- TODO -->
+        <item name="colorOnPrimary">@android:color/black</item> <!-- TODO -->
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/colorAccentDark</item>  <!-- TODO -->
+        <item name="colorOnSecondary">@android:color/black</item>  <!-- TODO -->
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <!-- Shared themes -->
+    <style name="Theme.MarvelApp.Default" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:textViewStyle">@style/Theme.MarvelApp.AppStyleTextView</item>
+        <item name="fontFamily">@font/notosans</item>
+    </style>
+
+    <style name="Theme.MarvelApp.AppStyleTextView" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/notosans</item>
+    </style>
+
+    <style name="Theme.MarvelApp.BottomNavigation" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/notosans_medium</item>
+    </style>
+
+</resources>
