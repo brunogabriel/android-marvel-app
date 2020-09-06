@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/characteres"
+        android:enabled="true"
+        android:icon="@drawable/ic_iron_man"
+        android:title="@string/characteres" />
+    <item
+        android:id="@+id/favorites"
+        android:enabled="true"
+        android:icon="@drawable/ic_captain_america"
+        android:title="@string/favorites" />
+    <item
+        android:id="@+id/about"
+        android:enabled="true"
+        android:icon="@drawable/ic_open_menu"
+        android:title="@string/about" />
+</menu>

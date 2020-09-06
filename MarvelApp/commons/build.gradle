@@ -1,0 +1,16 @@
+import dependencies.Dependencies
+
+apply plugin: 'com.android.library'
+apply from: "$rootDir/config/android_build.gradle"
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+
+dependencies {
+    // Hilt
+    implementation Dependencies.hilt.values()
+    kapt Dependencies.hiltCompile.values()
+
+    implementation Dependencies.ui.values()
+    implementation Dependencies.ktx.values()
+    implementation Dependencies.archComponents.values()
+}

@@ -14,15 +14,17 @@ object Dependencies {
 
     val retrofit = mapOf(
         "RETROFIT" to "com.squareup.retrofit2:retrofit:${Versions.RETROFIT}",
-        "RETROFIT_RX_ADAPTER" to "com.squareup.retrofit2:adapter-rxjava2:${Versions.RETROFIT}",
         "RETROFIT_GSON" to "com.squareup.retrofit2:converter-gson:${Versions.RETROFIT}"
     )
 
     val hilt = mapOf(
-        "HILT" to "com.google.dagger:hilt-android:${Versions.HILT}"
+        "HILT" to "com.google.dagger:hilt-android:${Versions.HILT}",
+        "HILT_LIFECYCLE_VIEWMODEL" to "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.HILT_LIFECYCLE_VIEWMODEL}"
     )
+
     val hiltCompile = mapOf(
-        "HILT_COMPILER" to "com.google.dagger:hilt-android-compiler:${Versions.HILT}"
+        "HILT_COMPILER" to "com.google.dagger:hilt-android-compiler:${Versions.HILT}",
+        "HILT_LIFECYCLE_VIEWMODEL_COMPILER" to "androidx.hilt:hilt-compiler:${Versions.HILT_LIFECYCLE_VIEWMODEL}"
     )
 
     val detekt = mapOf(
@@ -30,14 +32,16 @@ object Dependencies {
     )
 
     val ktx = mapOf(
-        "CORE" to "androidx.core:core-ktx:${Versions.KTX}",
-        "VIEWMODEL" to "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.KTX}",
-        "LIFECYCLE" to "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-alpha01:${Versions.KTX}",
-        "LIVEDATA" to "androidx.lifecycle:lifecycle-livedata-ktx::2.2.0-alpha01:${Versions.KTX}"
+        "CORE" to "androidx.core:core-ktx:${Versions.CORE_KTX}",
+        "VIEWMODEL" to "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.LIFECYCLE_KTX}",
+        "LIFECYCLE" to "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.LIFECYCLE_KTX}",
+        "LIVEDATA" to "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.LIFECYCLE_KTX}",
+        "FRAGMENT" to "androidx.fragment:fragment-ktx:${Versions.FRAGMENT_KTX}"
     )
 
     val archComponents = mapOf(
-        "ARCH_COMPONENTS" to "androidx.lifecycle:lifecycle-extensions:${Versions.ARCH_COMPONENTS}"
+        "ARCH_COMPONENTS" to "androidx.lifecycle:lifecycle-extensions:${Versions.ARCH_COMPONENTS}",
+        "ARCH_EXTENSIONS" to "android.arch.lifecycle:extensions:${Versions.ARCH_COMPONENTS}"
     )
 
     val picasso = "com.squareup.picasso:picasso:${Versions.PICASSO}"

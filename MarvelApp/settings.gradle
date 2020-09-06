@@ -1,3 +1,5 @@
+include ':commons'
+include ':features:main'
 include ':styleguide'
 include ':network'
 include ':app'

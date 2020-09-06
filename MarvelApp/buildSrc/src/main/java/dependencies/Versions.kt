@@ -3,8 +3,11 @@ package dependencies
 object Versions {
     const val APP_COMPAT = "1.2.0"
     const val HILT = "2.28-alpha"
+    const val HILT_LIFECYCLE_VIEWMODEL = "1.0.0-alpha01"
     const val DETEKT = "1.12.0"
-    const val KTX = "2.1.0-beta01"
+    const val CORE_KTX = "1.3.1"
+    const val LIFECYCLE_KTX = "2.2.0"
+    const val FRAGMENT_KTX = "1.2.5"
     const val CONSTRAINT_LAYOUT = "2.0.0"
     const val RECYCLERVIEW = "1.1.0"
     const val MATERIAL = "1.2.0"

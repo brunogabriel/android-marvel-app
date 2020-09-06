@@ -1,27 +1,22 @@
 import dependencies.Dependencies
 import dependencies.Modules
 
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply from: "$rootDir/config/android_build.gradle"
 apply plugin: 'kotlin-kapt'
 apply plugin: 'dagger.hilt.android.plugin'
 
-android {
-    defaultConfig {
-        applicationId AndroidConfig.APPLICATION_ID
-    }
-}
-
 dependencies {
     // Modules
+    implementation project(Modules.COMMONS)
     implementation project(Modules.STYLEGUIDE)
     implementation project(Modules.NETWORK)
-    implementation project(Modules.COMMONS)
-    implementation project(Modules.MAIN)
 
     // Hilt
     implementation Dependencies.hilt.values()
     kapt Dependencies.hiltCompile.values()
 
     implementation Dependencies.ui.values()
+    implementation Dependencies.ktx.values()
+    implementation Dependencies.archComponents.values()
 }
