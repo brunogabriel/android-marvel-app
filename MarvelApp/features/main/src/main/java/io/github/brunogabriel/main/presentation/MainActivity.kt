@@ -7,6 +7,7 @@ import androidx.activity.viewModels
 import dagger.hilt.android.AndroidEntryPoint
 import io.github.brunogabriel.commons.activity.BaseActivity
 import io.github.brunogabriel.main.R
+import kotlinx.android.synthetic.main.activity_main.*
 
 @AndroidEntryPoint
 class MainActivity : BaseActivity() {
@@ -15,6 +16,11 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+         setUpView()
+    }
+
+    private fun setUpView() {
+        setToolbar(toolbar)
     }
 
     companion object {
