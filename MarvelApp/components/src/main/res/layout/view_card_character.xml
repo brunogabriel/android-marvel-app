@@ -5,15 +5,64 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <!-- TODO: Customize Colors and layout -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="10 Books | 10 stories" />
+
+    <ImageView
+        android:id="@+id/favoriteImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/favorite"
+        android:padding="@dimen/margin_span_size"
+        app:layout_constraintBottom_toBottomOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        tools:src="@drawable/ic_favorite" />
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/Theme.Marvel.TextView.H1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:text="Steve Rogers" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:text="Lorem ipsum dolor asimet. Dolor ipsum dolor asimet. Lorem ipsum dolor asimet. Dolor ipsum dolor asimet. Dolor ipsum dolor asimet. Dolor ipsum dolor asimet. Dolor ipsum dolor asimet." />
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:layout_marginStart="@dimen/margin_span_size_double"
+        android:layout_marginTop="16dp"
         app:cardBackgroundColor="@color/colorGray_EEEEEE"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:shapeAppearanceOverlay="@style/Theme.Marvel.Shape.Card.LeftCorners">
 
         <ImageView
@@ -25,34 +74,5 @@
             tools:src="@tools:sample/avatars" />
 
     </com.google.android.material.card.MaterialCardView>
-
-    <TextView
-        android:id="@+id/nameText"
-        style="@style/Theme.Marvel.TextView.H1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin_span_size"
-        android:ellipsize="end"
-        android:maxLines="1"
-        android:singleLine="true"
-        app:layout_constraintBottom_toBottomOf="@+id/favoriteImage"
-        app:layout_constraintEnd_toStartOf="@+id/favoriteImage"
-        app:layout_constraintStart_toStartOf="@+id/cardView"
-        app:layout_constraintTop_toTopOf="@+id/favoriteImage"
-        tools:text="Steve Rogers" />
-
-    <ImageView
-        android:id="@+id/favoriteImage"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:contentDescription="@string/favorite"
-        android:layout_marginTop="@dimen/margin_span_size"
-        android:layout_marginEnd="@dimen/margin_span_size_double"
-        android:layout_marginBottom="@dimen/margin_span_size"
-        android:padding="@dimen/margin_span_size"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView"
-        tools:src="@drawable/ic_favorite" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
