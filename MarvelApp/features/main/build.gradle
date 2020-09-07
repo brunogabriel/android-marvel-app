@@ -9,7 +9,7 @@ apply plugin: 'dagger.hilt.android.plugin'
 dependencies {
     // Modules
     implementation project(Modules.COMMONS)
-    implementation project(Modules.STYLEGUIDE)
+    implementation project(Modules.COMPONENTS)
     implementation project(Modules.NETWORK)
 
     // Hilt

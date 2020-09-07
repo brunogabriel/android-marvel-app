@@ -17,6 +17,9 @@ dependencies {
     implementation project(Modules.STYLEGUIDE)
     implementation project(Modules.NETWORK)
     implementation project(Modules.COMMONS)
+    implementation project(Modules.COMPONENTS)
+
+    // Modules Feature
     implementation project(Modules.MAIN)
 
     // Hilt

@@ -26,12 +26,8 @@
         <item name="android:fontFamily">@font/notosans</item>
     </style>
 
-    <style name="Theme.MarvelApp.BottomNavigation.Active" parent="Widget.Design.BottomNavigationView">
+    <style name="Theme.MarvelApp.BottomNavigation" parent="Widget.Design.BottomNavigationView">
         <item name="fontFamily">@font/notosans_medium</item>
-    </style>
-
-    <style name="Theme.MarvelApp.BottomNavigation.Inactive" parent="Widget.Design.BottomNavigationView">
-        <item name="fontFamily">@font/notosans_light</item>
     </style>
 
     <style name="Theme.MarvelApp.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
@@ -43,6 +39,16 @@
         <item name="titleTextAppearance">@style/Theme.MarvelApp.Toolbar.Title</item>
         <item name="popupTheme">@style/ThemeOverlay.AppCompat.DayNight</item>
         <item name="theme">@style/Widget.MaterialComponents.ActionBar.Primary</item>
+    </style>
+
+    <style name="Theme.Marvel.Shape.Card.LeftCorners" parent="">
+        <item name="cornerSizeBottomLeft">@dimen/shape_card_corner</item>
+        <item name="cornerSizeTopLeft">@dimen/shape_card_corner</item>
+    </style>
+
+    <style name="Theme.Marvel.TextView.H1" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/notosans_medium</item>
+        <item name="android:textSize">@dimen/text_size_h1</item>
     </style>
 
 </resources>

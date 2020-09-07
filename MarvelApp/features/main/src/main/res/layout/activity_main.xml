@@ -19,18 +19,17 @@
             android:id="@+id/toolbar"
             style="@style/Theme.MarvelApp.Toolbar"
             android:layout_width="match_parent"
-            app:title="@string/app_name"
             android:layout_height="@dimen/toolbar_height"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/app_name" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigation"
             android:layout_width="match_parent"
-            app:itemTextAppearanceActive="@style/Theme.MarvelApp.BottomNavigation.Active"
-            app:itemTextAppearanceInactive="@style/Theme.MarvelApp.BottomNavigation.Inactive"
             android:layout_height="@dimen/bottom_navigation_height"
+            android:theme="@style/Theme.MarvelApp.BottomNavigation"
             app:itemIconTint="@color/bottom_navigation_tint_color"
             app:itemTextColor="@color/bottom_navigation_tint_color"
             app:layout_constraintBottom_toBottomOf="parent"

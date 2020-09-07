@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Marvel App</string>
+    <string name="character">Character</string>
     <string name="characteres">Characteres</string>
+    <string name="favorite">Favorite</string>
     <string name="favorites">Favorites</string>
     <string name="about">About</string>
 </resources>

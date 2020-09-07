@@ -1,0 +1,12 @@
+import dependencies.Dependencies
+import dependencies.Modules
+
+apply plugin: 'com.android.library'
+apply from: "$rootDir/config/android_build.gradle"
+
+dependencies {
+    // Modules
+    implementation project(Modules.STYLEGUIDE)
+
+    implementation Dependencies.ui.values()
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginStart="@dimen/margin_span_size_double"
+        app:cardBackgroundColor="@color/colorGray_EEEEEE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/Theme.Marvel.Shape.Card.LeftCorners">
+
+        <ImageView
+            android:id="@+id/cardImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/character"
+            android:src="@mipmap/ic_launcher_round"
+            tools:src="@tools:sample/avatars" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/nameText"
+        style="@style/Theme.Marvel.TextView.H1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_span_size"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="@+id/favoriteImage"
+        app:layout_constraintEnd_toStartOf="@+id/favoriteImage"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/favoriteImage"
+        tools:text="Steve Rogers" />
+
+    <ImageView
+        android:id="@+id/favoriteImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/favorite"
+        android:layout_marginTop="@dimen/margin_span_size"
+        android:layout_marginEnd="@dimen/margin_span_size_double"
+        android:layout_marginBottom="@dimen/margin_span_size"
+        android:padding="@dimen/margin_span_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:src="@drawable/ic_favorite" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
