@@ -1,0 +1,10 @@
+import dependencies.Dependencies
+
+apply plugin: 'com.android.library'
+apply from: "$rootDir/config/android_build.gradle"
+
+dependencies {
+    // hilt
+    implementation Dependencies.hilt.values()
+    kapt Dependencies.hiltCompile.values()
+}

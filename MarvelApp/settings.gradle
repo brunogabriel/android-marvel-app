@@ -1,3 +1,4 @@
+include ':database'
 include ':components'
 include ':commons'
 include ':features:main'
